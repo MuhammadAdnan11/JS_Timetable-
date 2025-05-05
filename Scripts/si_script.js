@@ -26,8 +26,8 @@ function addSubjectRow() {
     const container = document.getElementById("subjectInputs");
     const div = document.createElement("div");
     div.innerHTML = `
-      <input type="text" placeholder="Subject" class="subject" />
-      <input type="number" placeholder="Unit" class="unit" />
+      <input type="text" id="sub-textField" placeholder="Subject" class="subject" />
+      <input type="number" id="sub-unitField" placeholder="Unit" class="unit" />
       <button onclick="this.parentElement.remove()">Remove</button>
     `;
     container.appendChild(div);
